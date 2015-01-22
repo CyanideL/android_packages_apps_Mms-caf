@@ -78,6 +78,7 @@ import android.drm.DrmStore;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.media.RingtoneManager;
+import com.cyanide.ProximitySensorManager;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -342,6 +343,8 @@ public class ComposeMessageActivity extends Activity
     private BackgroundQueryHandler mBackgroundQueryHandler;
 
     private Conversation mConversation;     // Conversation we are working in
+
+    private ProximitySensorManager mProximitySensorManager;
 
     // When mSendDiscreetMode is true, this activity only allows a user to type in and send
     // a single sms, send the message, and then exits. The message history and menus are hidden.
@@ -2004,6 +2007,9 @@ public class ComposeMessageActivity extends Activity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        mProximitySensorManager = new ProximitySensorManager(ComposeMessageActivity.this, this);
+
         mIsSmsEnabled = MmsConfig.isSmsEnabled(this);
         super.onCreate(savedInstanceState);
 
@@ -6231,4 +6237,17 @@ public class ComposeMessageActivity extends Activity
         }
     };
 
+    @Override
+    public void onPickup() {
+        if (!getRecipients().isEmpty()) {
+            mProximitySensorManager.disable();
+
+            // get number and attach it to an Intent.ACTION_CALL, then start the Intent
+            String number = getRecipients().get(0).getNumber();
+            Intent dialIntent = new Intent(Intent.ACTION_CALL);
+            dialIntent.setData(Uri.fromParts("tel", number, null));
+            dialIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(dialIntent);
+        }
+    }
 }
