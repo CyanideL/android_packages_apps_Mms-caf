@@ -85,11 +85,8 @@ import com.android.mms.data.Contact;
 import com.android.mms.data.ContactList;
 import com.android.mms.data.Conversation;
 import com.android.mms.data.Conversation.ConversationQueryHandler;
-<<<<<<< HEAD
-=======
 import com.android.mms.data.RecipientIdCache;
 import com.android.mms.themes.Constants;
->>>>>>> 3c4524b... Port theme ability to mms from kk4.4 :
 import com.android.mms.transaction.MessagingNotification;
 import com.android.mms.transaction.SmsRejectedReceiver;
 import com.android.mms.util.DraftCache;
