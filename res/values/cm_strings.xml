@@ -16,6 +16,16 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on color below to apply</string>
+    <string name="arrow_right" translatable="false">→</string>
+    <string name="arrow_down" translatable="false">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Set</string>
+    <string name="color_default">Default</string>
+    
     <!-- QUICKMESSAGE SUPPORT -->
     <!-- Preferences -->
     <string name="pref_quickmessage">QuickMessage and Reply</string>
@@ -386,4 +396,5 @@
     <!-- Smart Dialer -->
     <string name="pref_title_mms_smart_dialer">Smart call</string>
     <string name="pref_summary_mms_smart_dialer">Automatically call the contact by moving your phone to your ear</string>
+
 </resources>
