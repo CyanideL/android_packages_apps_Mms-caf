@@ -59,13 +59,13 @@
 
     <!-- Theme defaults -->
     <!-- == Conversation list default colors == -->
-    <color name="default_conv_list_background">#ffffffff</color>
+    <color name="default_conv_list_background">#ff000000</color>
     <!-- Read defaults -->
     <color name="default_read_bg">#00000000</color>
-    <color name="default_read_contact">#ff000000</color>
-    <color name="default_read_subject">#ff000000</color>
-    <color name="default_read_date">#ff000000</color>
-    <color name="default_read_count">#ff000000</color>
+    <color name="default_read_contact">#ff00ff00</color>
+    <color name="default_read_subject">#ffffffff</color>
+    <color name="default_read_date">#ff1976D2</color>
+    <color name="default_read_count">#ffffffff</color>
     <!-- Unread defaults -->
     <color name="default_unread_bg">#ff00a3f8</color>
     <color name="default_unread_contact">#ff000000</color>
@@ -74,17 +74,17 @@
     <color name="default_unread_count">#ff000000</color>
 
     <!-- == Messages list view default colors == -->
-    <color name="default_message_background">#ea333333</color>
+    <color name="default_message_background">#ff000000</color>
     <!-- Read defaults -->
-    <color name="default_recv_text_bg">#ff4caf50</color>
+    <color name="default_recv_text_bg">#ff00ff00</color>
     <color name="default_recv_contact_color">#ff000000</color>
-    <color name="default_recv_textcolor">#ff000000</color>
-    <color name="default_recv_datecolor">#ff000000</color>
+    <color name="default_recv_textcolor">#ffffffff</color>
+    <color name="default_recv_datecolor">#ff1976D2</color>
     <!-- Unread defaults -->
-    <color name="default_sent_text_bg">#ff3f51b5</color>
+    <color name="default_sent_text_bg">#ff1976D2</color>
     <color name="default_sent_contact_color">#ff000000</color>
-    <color name="default_sent_textcolor">#ff000000</color>
-    <color name="default_sent_datecolor">#ff000000</color>
+    <color name="default_sent_textcolor">#ffffffff</color>
+    <color name="default_sent_datecolor">#ff1976D2</color>
 
     <!-- == Widget default colors == -->
     <!-- widget dark -->
